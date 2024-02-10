@@ -6,9 +6,3 @@ my first article :d :d :d :d
 my first article :d :d :d :d
 my first article :d :d :d :d
 my first article :d :d :d :d
-my first article :d :d :d :d
-my first article :d :d :d :d
-my first article :d :d :d :d
-my first article :d :d :d :d
-my first article :d :d :d :d
-my first article :d :d :d :d

@@ -1,0 +1,36 @@
+---
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Social from '../../components/Social.astro';
+import { getCollection } from 'astro:content';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('posts');
+  return blogEntries.map(entry => ({
+    params: { slug: entry.slug }, props: { entry },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { entry } = Astro.props;
+---
+<Header />
+<body class="bg-gray-100">
+  <header class="bg-white shadow">
+      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold text-gray-900">{entry.data.title}</h1>
+      </div>
+  </header>
+  <main>
+      <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+          <!-- Replace with your blog post content -->
+          <div class="px-4 py-6 sm:px-0">
+              <div class="border-4 border-dashed border-gray-200 rounded-lg h-96">
+
+                {entry.body} 
+              </div>
+          </div>
+      </div>
+  </main>
+  <Social />
+  <Footer />
+</body>
