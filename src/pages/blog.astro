@@ -1,25 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import BlogPost from "../components/BlogPost.astro";
+import BlogPost from "../components/BlogPost.jsx";
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import Social from '../components/Social.astro';
+import { getCollection, getEntry } from 'astro:content';
 
 
-
-
-const allPosts = await Astro.glob("../content/posts/*.md");
+const allPosts = await getCollection("posts");
+console.log(allPosts);
 ---
 
 
-<Header />
 
 <Layout title="Valentin Ciolofan | Blog">
-<ul>
-  {allPosts.map((post) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-</ul>
+<div class="">
+  <h1 class="text-4xl">Blog</h1>
 
-<Social />
+  <div class="container mx-auto my-40 flex justify-center">
+    <ul class="flex flex-wrap justify-center max-w-7xl ">
+      {allPosts.map(post => <BlogPost url={post.slug} title={post.data.title} image={post.data.image} duration={post.data.duration} date={post.data.date} pitch={post.data.pitch}/>)}
+    </ul>
+  </div>
+</div>
 
-<Footer />
 </Layout>
