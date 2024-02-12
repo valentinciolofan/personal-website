@@ -12,15 +12,16 @@ console.log(allPosts);
 ---
 
 
-<Header />
 
 <Layout title="Valentin Ciolofan | Blog">
-<div>
-<ul>
-  {allPosts.map(post => <BlogPost url={post.slug} title={post.data.title}/>)}
-</ul>
-</div>
-<Social />
+<div class="">
+  <h1 class="text-4xl">Blog</h1>
 
-<Footer />
+  <div class="container mx-auto my-40 flex justify-center">
+    <ul class="flex flex-wrap justify-center max-w-7xl ">
+      {allPosts.map(post => <BlogPost url={post.slug} title={post.data.title} image={post.data.image} duration={post.data.duration} date={post.data.date} pitch={post.data.pitch}/>)}
+    </ul>
+  </div>
+</div>
+
 </Layout>

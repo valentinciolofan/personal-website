@@ -1,5 +1,6 @@
 ---
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import '@fortawesome/fontawesome-free/css/all.css';
 
 
@@ -24,7 +25,13 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
+			<!-- header homepage -->
+			<div class="header-homepage">
+				<Header />
+			  </div>
+			  <!-- end of header homepage -->
 		<slot />
+		<Footer />
 	</body>
 </html>
 <style is:global>
