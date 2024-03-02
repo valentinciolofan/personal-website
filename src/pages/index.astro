@@ -18,7 +18,6 @@ for (let i = 0; i < 3; i++) {
   }
 }
 
-const markup = [{ __html: '<svg fill="none" viewBox="0 0 42 42" class="h-10 svgFilter" astro-icon="icon-webdesign"><path fill="url(#astroicon:icon-webdesigna)" fill-rule="evenodd" d="M40.638 19.814a.586.586 0 0 0-.64.128l-1.759 1.764V9.712a.588.588 0 0 0-.587-.59h-4.51l1.637-1.642 1.578-1.584c.338-.339.525-.79.525-1.27s-.187-.93-.525-1.27l-1.824-1.83A1.776 1.776 0 0 0 33.267 1c-.478 0-.928.187-1.266.526L30.423 3.11l-1.908 1.913-4.086 4.1H6.205V3.296a.588.588 0 0 0-.587-.59C3.07 2.707 1 4.786 1 7.34v25.017c0 .043.005.086.014.127a4.442 4.442 0 0 0 1.33 2.855 4.414 4.414 0 0 0 3.103 1.267h17.94l-3.378 3.39A.59.59 0 0 0 20.424 41h19.989a.588.588 0 0 0 .587-.589V20.358a.59.59 0 0 0-.362-.544ZM32.832 2.359c.24-.241.63-.241.87 0l1.825 1.83a.62.62 0 0 1 0 .874l-1.163 1.168-2.696-2.705 1.163-1.167Zm-1.994 2 2.695 2.704-1.077 1.081-2.695-2.704 1.077-1.08ZM18.397 21.76l-1.682.596-1.12-1.125.593-1.687 2.209 2.216Zm17.432 8.41-5.658 5.66a.1.1 0 0 0 .07.17H36v-5.759a.1.1 0 0 0-.17-.07ZM16 18.5l3.5 3.5 13-13L29 5.5l-13 13Z" clip-rule="evenodd" opacity=".15"></path><path fill="url(#astroicon:icon-webdesignb)" stroke="url(#astroicon:icon-webdesignc)" stroke-width=".25" d="M36.4 29.255a.586.586 0 0 0-.64.128l-6.416 6.436a.59.59 0 0 0 .415 1.006h6.416a.588.588 0 0 0 .587-.59V29.8a.59.59 0 0 0-.362-.544Zm-5.224 6.392 4.412-4.426v4.426h-4.412Z"></path><path fill="url(#astroicon:icon-webdesignd)" stroke="url(#astroicon:icon-webdesigne)" stroke-width=".25" d="M40.638 19.814a.586.586 0 0 0-.64.128l-1.759 1.764V9.712a.588.588 0 0 0-.587-.59h-4.51l1.637-1.642 1.578-1.584c.338-.339.525-.79.525-1.27s-.187-.93-.525-1.27l-1.824-1.83A1.776 1.776 0 0 0 33.267 1c-.478 0-.928.187-1.266.526L30.423 3.11l-1.908 1.913-4.086 4.1H6.205V3.296a.588.588 0 0 0-.587-.59C3.07 2.707 1 4.786 1 7.34v25.017c0 .043.005.086.014.127a4.442 4.442 0 0 0 1.33 2.855 4.414 4.414 0 0 0 3.103 1.267h17.94l-3.378 3.39A.59.59 0 0 0 20.424 41h19.989a.588.588 0 0 0 .587-.589V20.358a.59.59 0 0 0-.362-.544ZM32.832 2.359c.24-.241.63-.241.87 0l1.825 1.83a.62.62 0 0 1 0 .874l-1.163 1.168-2.696-2.705 1.163-1.167Zm-1.994 2 2.695 2.704-1.077 1.081-2.695-2.704 1.077-1.08Zm8.988 22.617h-1.083a.588.588 0 0 0 0 1.178h1.083v1.775h-1.083a.588.588 0 0 0 0 1.178h1.083v1.775h-1.083a.588.588 0 0 0 0 1.178h1.083v1.775h-1.083a.588.588 0 0 0 0 1.178h1.083v2.81H21.842l5.93-5.95a.59.59 0 0 0-.084-.903.586.586 0 0 0-.746.07l-2.38 2.387H5.448a3.26 3.26 0 0 1-3.271-3.178 3.472 3.472 0 0 1 .05-.49l.003-.018a3.406 3.406 0 0 1 .14-.53l.02-.06.046-.115.013-.033c.02-.047.041-.093.063-.14l.003-.005a3.458 3.458 0 0 1 2.558-1.913l.025-.004.135-.018.038-.004c.043-.005.087-.008.131-.01l.042-.003a3.45 3.45 0 0 1 .174-.005.588.588 0 0 0 .587-.589v-4.27a.588.588 0 1 0-1.175 0v3.718a4.58 4.58 0 0 0-2.856 1.512V7.34A3.457 3.457 0 0 1 5.03 3.935v17.75a.588.588 0 1 0 1.175 0V10.302h17.05l-3.246 3.256a.59.59 0 0 0 0 .833c.23.23.601.23.83 0l4.248-4.262 3.843-3.855 2.696 2.704-.317.317v.001L19.47 21.172l-2.696-2.705 2.333-2.34a.59.59 0 0 0 0-.834.586.586 0 0 0-.83 0l-2.749 2.758a.6.6 0 0 0-.04.046l-.013.017a.666.666 0 0 0-.024.033l-.012.021a.643.643 0 0 0-.044.091l-.005.012-1.144 3.251-.78 2.216a.59.59 0 0 0-.023.09h-1.952a.588.588 0 0 0 0 1.178H27.75a.588.588 0 0 0 0-1.178H16.085l3.58-1.268.01-.004a.647.647 0 0 0 .04-.017l.017-.007a.563.563 0 0 0 .041-.023l.013-.008a.582.582 0 0 0 .042-.03l.01-.007a.591.591 0 0 0 .047-.043l12.082-12.12h5.098v12.583l-8.398 8.425a.59.59 0 0 0 .415 1.006.584.584 0 0 0 .415-.173L39.827 21.78v5.196Zm-21.43-5.216-1.681.596-1.12-1.125.593-1.687 2.209 2.216Z"></path><defs><linearGradient id="astroicon:icon-webdesigna" x1="3.267" x2="37.8" y1="1" y2="39.133" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient><linearGradient id="astroicon:icon-webdesignb" x1="29.602" x2="36.178" y1="29.21" y2="36.448" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient><linearGradient id="astroicon:icon-webdesignc" x1="29.602" x2="36.178" y1="29.21" y2="36.448" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient><linearGradient id="astroicon:icon-webdesignd" x1="3.267" x2="37.8" y1="1" y2="39.133" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient><linearGradient id="astroicon:icon-webdesigne" x1="3.267" x2="37.8" y1="1" y2="39.133" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient></defs></svg>' },{ __html: '<svg fill="none" viewBox="0 0 22 40" class="h-10 svgFilter" astro-icon="icon-phone"><path fill="url(#astroicon:icon-phonea)" fill-rule="evenodd" d="M3 1a2 2 0 0 0-2 2v34a2 2 0 0 0 2 2h15.9a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-3.237v1H6.237V1H3Z" clip-rule="evenodd" opacity=".15"></path><path fill="url(#astroicon:icon-phoneb)" d="M8.509 35.675a.676.676 0 1 0 0 1.352v-1.352Zm4.954 1.352a.676.676 0 0 0 0-1.352v1.352ZM.4 29.414a.676.676 0 0 0 1.353 0H.4Zm1.353 2.973a.676.676 0 1 0-1.353 0h1.353ZM20.219 7.613a.676.676 0 1 0 1.353 0h-1.353Zm1.353 2.973a.676.676 0 0 0-1.353 0h1.353ZM18.48 38.647H3.492V40H18.48v-1.353ZM3.492 1.353h3.035V0H3.492v1.353Zm2.358.34h1.353V.675H5.85v1.016Zm1.643 1.642h6.986V1.982H7.493v1.353Zm-.966-1.982h8.918V0H6.527v1.353Zm8.918 0h3.035V0h-3.035v1.353Zm.677.34V.675h-1.353v1.016h1.353ZM8.509 37.026h4.954v-1.352H8.51v1.352Zm-6.756-7.613V3.092H.4v26.322h1.353Zm0 7.494v-4.521H.4v4.521h1.353ZM20.219 3.092v4.521h1.353V3.092h-1.353Zm0 7.494v26.322h1.353V10.586h-1.353Zm-5.74-7.251c.907 0 1.643-.736 1.643-1.643h-1.353c0 .16-.13.29-.29.29v1.353ZM3.492 38.647a1.74 1.74 0 0 1-1.74-1.739H.4A3.092 3.092 0 0 0 3.492 40v-1.353ZM18.48 40a3.092 3.092 0 0 0 3.092-3.092h-1.353c0 .96-.779 1.74-1.739 1.74V40Zm0-38.647c.96 0 1.74.778 1.74 1.739h1.352A3.092 3.092 0 0 0 18.48 0v1.353Zm-12.63.34c0 .906.736 1.642 1.643 1.642V1.982a.29.29 0 0 1-.29-.29H5.85ZM3.492 0A3.092 3.092 0 0 0 .4 3.092h1.353c0-.96.778-1.74 1.739-1.74V0Z"></path><defs><linearGradient id="astroicon:icon-phonea" x1="2.128" x2="30.702" y1="1" y2="17.524" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient><linearGradient id="astroicon:icon-phoneb" x1="1.6" x2="31.837" y1="0" y2="17.673" gradientUnits="userSpaceOnUse"><stop offset=".259" stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor"></stop></linearGradient></defs></svg>' },{ __html: '<svg xml:space="preserve" viewBox="0 0 60 60" class="h-10 svgFilter" astro-icon="icon-cms"><path d="M7 39H5v20c0 .6.4 1 1 1h17v-2H7V39zM7 2h36v9c0 .6.4 1 1 1h9v28h2V11c0-.1 0-.2-.1-.3v-.1c-.1-.1-.1-.2-.2-.3l-10-10c-.1-.1-.2-.1-.3-.2h-.1c-.1 0-.2-.1-.3-.1H6c-.6 0-1 .4-1 1v16h2V2zm38 1.4 6.6 6.6H45V3.4z"></path><path d="M10 5h2v2h-2zM10 9h14v2H10zM10 13h14v2H10zM14 5h2v2h-2zM18 5h2v2h-2zM34 35v-7.6l5.7-5.7c.3-.3.4-.7.2-1.1-.1-.4-.5-.6-.9-.6H1c-.6 0-1 .4-1 1v14c0 .6.4 1 1 1h32c.6 0 1-.4 1-1zm-2-8v7H2V22h34.6l-4.3 4.3c-.2.2-.3.4-.3.7zM59 44H22c-.4 0-.7.2-.9.6-.2.4-.1.8.1 1.1l4.8 5.7V59c0 .6.4 1 1 1h32c.6 0 1-.4 1-1V45c0-.6-.4-1-1-1zm-1 14H27.9v-7c0-.2-.1-.4-.2-.6L24.1 46H58v12z"></path><path d="M4 25h2v2H4zM8 25h2v2H8zM12 25h18v2H12zM4 29h2v2H4zM8 29h22v2H8zM30 49h2v2h-2zM34 49h22v2H34zM30 53h2v2h-2zM34 53h2v2h-2zM38 53h18v2H38zM42 22h8v2h-8zM40 26h10v2H40zM36 30h14v2H36zM36 34h14v2H36zM9 54h2v2H9zM13 54h2v2h-2zM17 54h2v2h-2zM9 50h2v2H9zM13 50h2v2h-2zM9 46h2v2H9zM9 42h2v2H9zM13 46h2v2h-2zM17 50h2v2h-2zM21 54h2v2h-2z"></path></svg>' }, { __html: '' }];
 ---
 
 <Layout title="Valentin Ciolofan Web Developer">
@@ -76,8 +75,7 @@ const markup = [{ __html: '<svg fill="none" viewBox="0 0 42 42" class="h-10 svgF
               </div>
           </div>
             <button
-              id="openModal"
-              class="btn-cta-homepage text-base bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white py-2 px-2 rounded-md transition duration-300 ease-in-out"
+              class="openModal btn-cta-homepage text-base bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-600 hover:to-purple-600 text-white py-2 px-2 rounded-md transition duration-300 ease-in-out"
             >
               Request a website now!
             </button>
@@ -226,7 +224,7 @@ const markup = [{ __html: '<svg fill="none" viewBox="0 0 42 42" class="h-10 svgF
     </section>
       <!-- END OF ABOUT ME SECTION -->
 
-      <!-- START OF BLOG POSTS SECTION -->
+      <!-- START OF BLOG POSTS SECTION>
       <section class="blog-posts-section" id="blog-posts-section">
         <div class="blog-posts-section-title">
           <h2>Featured Articles</h2>
@@ -247,7 +245,7 @@ const markup = [{ __html: '<svg fill="none" viewBox="0 0 42 42" class="h-10 svgF
                 <a href="/blog/" class="ml-2">View more</a>
               </div>
             </div>
-            <!-- BLOG POSTS IMPORTED INTO MAIN PAGE -->
+             BLOG POSTS IMPORTED INTO MAIN PAGE 
             <div class="flex pt-10 pb-20">
               <ul class="flex flex-wrap justify-center max-w-full">
                 {
@@ -267,12 +265,16 @@ const markup = [{ __html: '<svg fill="none" viewBox="0 0 42 42" class="h-10 svgF
           </div>
         </div>
       </section>
-      <!-- END OF BLOG POSTS SECTION -->
+       END OF BLOG POSTS SECTION -->
   </main>
   <script>
-     document.getElementById('openModal').addEventListener('click', function() {
-            document.getElementById('modal').classList.remove('hidden');
-        });
+    let openModalButtons = document.querySelectorAll('.openModal');
+
+openModalButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.getElementById('modal').classList.remove('hidden');
+    });
+});
 
         document.getElementById('closeModal').addEventListener('click', function() {
     document.getElementById('modal').classList.add('hidden');
