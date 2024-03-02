@@ -1,34 +1,47 @@
-<div class="header">
+<div
+    class="fixed top-0 z-50 py-8 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-zinc-900/10 dark:border-zinc-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-zinc-900/75"
+>
+        <header class="container mx-auto flex flex-col md:flex-row md:justify-between">
+            <div class="flex justify-between">
+                <a href="..">Valentin Ciolofan</a>
+                <a href="#" id="hamburger" class="md:hidden self-end">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="*:block text-center *:mr-3 pt-8 *:py-1 max-[768px]:hidden md:block *:md:inline md:pt-0" id="navbar">
+                <a href="..">Home</a>
+                <a href="#aboutme">About me</a>
+                <a href="/blog/">Blog</a>
+                <a href="#projects">Portofolio</a>
+            </div>
+        </header>
+    </div>
 
-<span class="logo"> Valentin Ciolofan </span>
+<script>
+    const hideNavBar = () => {
+        let navBar = document.getElementById("navbar");
+        if (navBar.style.display === "block") {
+            navBar.style.display = "none";
+        } else {
+            navBar.style.display = "block";
+        }
+    };
 
-<header>
-    <a href="..">Home</a>
-    <a href="#aboutme">About me</a>
-    <a href="/blog/">Blog</a>
-    <a href="#projects">Portofolio</a>
-</header>
-</div>
+    document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.getElementById("hamburger");
+        if (hamburger) {
+            hamburger.addEventListener("click", hideNavBar);
+        }
+    });
+</script>
 
 <style>
-.header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 50px;
-}
-
-header {
-
-}
-a {
-    padding: 32px 16px;
-    color: #e7e1e1;
-    font-size: 16px;
-}
-a:hover {
-    color: #ffffff;
-}
-
+    a {
+        /* padding: 32px 16px; */
+        color: #e7e1e1;
+        font-size: 16px;
+    }
+    a:hover {
+        color: #ffffff;
+    }
 </style>

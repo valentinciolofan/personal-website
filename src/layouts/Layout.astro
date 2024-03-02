@@ -10,7 +10,6 @@ interface Props {
 
 const { title } = Astro.props;
 ---
-
 <!doctype html>
 <html lang="en">
 	<head>
@@ -24,30 +23,49 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-			<!-- header homepage -->
-			<div class="header-homepage">
-				<Header />
-			  </div>
-			  <!-- end of header homepage -->
+	<body class="min-h-screen">
+		<!-- header homepage -->
+		<Header />
+ 		<!-- end of header homepage -->
 		<slot />
 		<Footer />
 	</body>
 </html>
 <style is:global>
+
 :root {
 	background: linear-gradient(to right, #000000, #130f40);
-	background-size: 100% 100%;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #f1f1f1;
+	background-repeat: no-repeat;
+	font-size: 16px;
+ 	line-height: 1.5;
+
+  --white-primary: #fff; /* Pure white */
+  --white-off1: #f8f8f8; /* Slightly off-white */
+  --white-off2: #e5e5e5; /* Light gray */
 }
 
-h1, h2, h3 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+
+h1 { 
+  font-size: calc(1.5rem * 1.25 * 1.25 * 1.25); 
+  color: var(--white-off1); 
 }
+h2 { 
+  font-size: calc(1.5rem * 1.25 * 1.25); 
+  color: var(--white-off2); 
+}
+h3 { 
+  font-size: calc(1.5rem * 1.25); 
+  color: var(--white-off2);
+}
+h4 { 
+  font-size: 1.5rem; 
+  color: var(--white-primary); 
+}
+p,
+span,
+a { 
+  font-size: 1rem; 
+  color: var(--white-primary); 
+}
+
 </style>
