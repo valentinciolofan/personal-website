@@ -17,21 +17,24 @@
     </div>
 
 <script>
-    const hideNavBar = () => {
-        let navBar = document.getElementById("navbar");
-        if (navBar.style.display === "block") {
-            navBar.style.display = "none";
-        } else {
-            navBar.style.display = "block";
-        }
-    };
+ const hideNavBar = () => {
+  // Use optional chaining to safely access the element's style
+  const navBar = document.getElementById("navbar")?.style;
+  if (navBar) {
+    navBar.display = navBar.display === "block" ? "none" : "block";
+  }
+};
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const hamburger = document.getElementById("hamburger");
-        if (hamburger) {
-            hamburger.addEventListener("click", hideNavBar);
-        }
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.getElementById("hamburger");
+  if (hamburger) {
+    hamburger.addEventListener("click", hideNavBar);
+  } else {
+    // Handle the case where the "hamburger" element is not found
+    console.warn("Hamburger element not found. Navigation bar toggle might not work.");
+  }
+});
+
 </script>
 
 <style>

@@ -1,22 +1,5 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-import Social from "../components/Social.astro";
-import BlogPost from "../components/BlogPost";
-import Service from '../components/Service';
-
-import { getCollection, getEntry } from "astro:content";
-
-const allPosts = await getCollection("posts");
-
-let featuredArticles = [];
-
-for (let i = 0; i < 3; i++) {
-  if (i < 3) {
-    featuredArticles.push(allPosts[i]);
-  }
-}
 
 ---
 
@@ -53,7 +36,7 @@ for (let i = 0; i < 3; i++) {
             <h3 class="mb-3 text-base">
               Tired of your old, slow, and outdated website?
             </h3>
-            <div id="modal" class="hidden fixed flex justify-center items-center z-50 inset-0 bg-zinc-600 bg-opacity-50 overflow-y-auto h-full w-full transition-opacity duration-300 ease-in-out"">
+            <div id="modal" class="hidden fixed flex justify-center items-center z-50 inset-0 bg-zinc-600 bg-opacity-50 overflow-y-auto h-full w-full transition-opacity duration-300 ease-in-out">
               <!-- Modal content -->
               <div class="relative p-5 border border-zinc-800 max-w-2xl min-h-96 shadow-lg rounded-md bg-zinc-900">
                   <div class="mt-3 text-center">
@@ -180,7 +163,7 @@ for (let i = 0; i < 3; i++) {
 
          <div class="card card-side shadow-xl">
 
-          <div class="p-2"><svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="40px" height="40px" viewBox="0 0 30 30" version="1.1" id="svg822" inkscape:version="0.92.4 (5da689c313, 2019-01-14)" sodipodi:docname="speed.svg" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs816"></defs> <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#a91e1e" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="17.866667" inkscape:cx="15" inkscape:cy="15" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="true" units="px" inkscape:window-width="1366" inkscape:window-height="705" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:lockguides="true"> <inkscape:grid type="xygrid" id="grid816"></inkscape:grid> </sodipodi:namedview> <metadata id="metadata819"> <rdf:rdf> <cc:work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type> <dc:title></dc:title> </cc:work> </rdf:rdf> </metadata> <g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(0,-289.0625)"> <path style="opacity:1;fill:#b0b0b0;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 14.703125,5.5722656 a 12,12 0 0 0 -12,12.0000004 12,12 0 0 0 0.6894531,3.964843 A 10.746539,10.746539 0 0 1 3.0976562,19.09375 10.746539,10.746539 0 0 1 13.84375,8.3476562 10.746539,10.746539 0 0 1 19.826172,10.173828 L 21.966797,8.0332031 A 12,12 0 0 0 14.703125,5.5722656 Z m 9.148437,3.6035156 c -0.25173,0.00423 -0.507325,0.1022801 -0.71875,0.28125 l -9.193359,7.7812498 c -0.422789,0.35795 -1.416166,1.411952 -0.002,2.826172 1.414471,1.41445 2.468093,0.418804 2.826172,-0.0039 l 7.783203,-9.189453 c 0.358051,-0.42275 0.391737,-1.0223328 0,-1.4140628 -0.195869,-0.19587 -0.443582,-0.285475 -0.695313,-0.28125 z m 1.84961,3.6074218 -2.021484,2.021485 A 10.746539,10.746539 0 0 1 24.585938,19 h 2.015624 a 12,12 0 0 0 0.101563,-1.427734 12,12 0 0 0 -1.001953,-4.789063 z" transform="translate(0,289.0625)" id="path4625" inkscape:connector-curvature="0"></path> </g> </g></svg></div>
+          <div class="p-2"><svg  width="40px" height="40px" viewBox="0 0 30 30" version="1.1" id="svg822" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <defs id="defs816"></defs> <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#a91e1e" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="17.866667" inkscape:cx="15" inkscape:cy="15" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="true" units="px" inkscape:window-width="1366" inkscape:window-height="705" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:lockguides="true"> <inkscape:grid type="xygrid" id="grid816"></inkscape:grid> </sodipodi:namedview> <metadata id="metadata819"> <rdf:rdf> <cc:work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type> <dc:title></dc:title> </cc:work> </rdf:rdf> </metadata> <g ="Layer 1"  id="layer1" transform="translate(0,-289.0625)"> <path style="opacity:1;fill:#b0b0b0;fill-opacity:1;stroke:none;stroke-width:10;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" d="m 14.703125,5.5722656 a 12,12 0 0 0 -12,12.0000004 12,12 0 0 0 0.6894531,3.964843 A 10.746539,10.746539 0 0 1 3.0976562,19.09375 10.746539,10.746539 0 0 1 13.84375,8.3476562 10.746539,10.746539 0 0 1 19.826172,10.173828 L 21.966797,8.0332031 A 12,12 0 0 0 14.703125,5.5722656 Z m 9.148437,3.6035156 c -0.25173,0.00423 -0.507325,0.1022801 -0.71875,0.28125 l -9.193359,7.7812498 c -0.422789,0.35795 -1.416166,1.411952 -0.002,2.826172 1.414471,1.41445 2.468093,0.418804 2.826172,-0.0039 l 7.783203,-9.189453 c 0.358051,-0.42275 0.391737,-1.0223328 0,-1.4140628 -0.195869,-0.19587 -0.443582,-0.285475 -0.695313,-0.28125 z m 1.84961,3.6074218 -2.021484,2.021485 A 10.746539,10.746539 0 0 1 24.585938,19 h 2.015624 a 12,12 0 0 0 0.101563,-1.427734 12,12 0 0 0 -1.001953,-4.789063 z" transform="translate(0,289.0625)" id="path4625" inkscape:connector-curvature="0"></path> </g> </g></svg></div>
           <div class="card-body">
               <h2 class="card-title">Fast</h2>
               <p>Fast load times and lag free interaction.</p>
@@ -268,16 +251,25 @@ for (let i = 0; i < 3; i++) {
        END OF BLOG POSTS SECTION -->
   </main>
   <script>
-    let openModalButtons = document.querySelectorAll('.openModal');
+document.addEventListener("DOMContentLoaded", () => {
+  // Use optional chaining to safely access the elements
+  const openModalButtons = document.querySelectorAll('.openModal');
+  const modal = document.getElementById('modal')?.classList;
+  const closeModalButton = document.getElementById('closeModal');
 
-openModalButtons.forEach(function(button) {
-    button.addEventListener('click', function() {
-        document.getElementById('modal').classList.remove('hidden');
+  if (openModalButtons && modal && closeModalButton) {
+    openModalButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        modal.remove('hidden');
+      });
     });
-});
 
-        document.getElementById('closeModal').addEventListener('click', function() {
-    document.getElementById('modal').classList.add('hidden');
+    closeModalButton.addEventListener('click', () => {
+      modal.add('hidden');
+    });
+  } else {
+    console.warn("Required elements for modal functionality not found.");
+  }
 });
 </script>
 </Layout>
